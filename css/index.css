@@ -10,6 +10,7 @@ body{
     overflow: hidden;
   }
 header{
+    top:0;
     position: fixed;
     display: flex;
     width: 100%;
@@ -18,11 +19,20 @@ header{
     box-sizing: border-box;
     align-items: center;
     font-weight: bold;
+    background: #2e2e2e;
 }
 header button{
     width: 40px;
     height: 40px;
+    border: 0;
+    background: none;
 }
+header button i{
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
 .logo img{
     width: 100px;
     height: 50px;
@@ -38,18 +48,78 @@ nav ul li{
 main>section{
     width: 100%;
     height: 100vh;
-    padding: 100px;
     box-sizing: border-box;
 }
-.page1{
-    padding: 400px;
+main>section>article{
+    margin:0 100px;
+    padding: 100px 0;
+    box-sizing: border-box;
+
 }
-.page1 article{}
+.hahaha{
+    z-index: 2;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    transform: skewX(-30deg);
+    display: none;
+}
+.hahaha img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.right{
+    width: 100%;
+    height: 100%;
+    background: #FF0080;
+    right:-50%;
+    position: absolute;
+}
+.left{
+    position: absolute;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgb(52, 52, 149);
+}
+
+
+.page1{
+
+}
+.page1 article{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
 .page1 p{
+    margin-top: 150px;
+    width: 1300px;
     text-transform: uppercase;
-    font-size: 120px;
+    font-size: 100px;
+    line-height: 150px;
     font-weight: bold;
 }
+.page1 span{
+    text-align: right;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.page1 span i{
+    font-size: 23px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    color: #20b085;
+    font-weight: bold;
+}
+
 .page2{
 }
 .page3{
@@ -57,4 +127,65 @@ main>section{
 .page4{
 }
 .page5{
+}
+.boxani{
+    animation:box-ani 2s ease forwards 0s;
+}
+.boxani2{
+    animation:box-ani2 2s ease forwards 0s;
+}
+.totop{
+    animation:totop 1s ease forwards 1.5s;
+}
+.totop2{
+    animation:totop 1s ease forwards 2s;
+}
+
+@keyframes box-ani {
+	
+    0%{
+        transform: translate(0,0%);
+    }
+    50% {
+		transform: translate(0,-50%);
+	}
+	100% {
+		transform: translate(-100%,-50%);
+	}
+}
+@keyframes box-ani2 {
+	
+    0%{
+        transform: translate(0,0%);
+    }
+    50% {
+		transform: translate(0,50%);
+	}
+	100% {
+		transform: translate(100%,50%);
+	}
+}
+@keyframes totop {
+	
+    0%{
+        transform: translate(-50%,0);
+    }
+    5% {
+		transform: translate(-50%,5%);
+	}
+	100% {
+		transform: translate(-50%,-1000%);
+	}
+}
+@keyframes totop2 {
+	
+    0%{
+        transform: translate(-50%,0);
+    }
+    5% {
+		transform: translate(-50%,5%);
+	}
+	100% {
+		transform: translate(-50%,-1000%);
+	}
 }
