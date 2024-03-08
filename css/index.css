@@ -409,6 +409,7 @@ section>article{
     position: relative;
     height: 940px;
 }
+.page4 h2,
 .page3 h2{
     font-size: 60px;
     text-transform: capitalize;
@@ -416,6 +417,7 @@ section>article{
     margin-bottom: 100px;
     font-weight: bold;
 }
+.page4 h2::after,
 .page3 h2::after{
     content: "";
     width: 8px;
@@ -859,11 +861,46 @@ table td i{
     color: #20b085;
     margin-left: 20px;
 }
-.page4{
+.page4 article{
+    display: flex;
+    flex-flow: column;
+}
+.page4 h2{
+    margin-bottom: 60px;
+}
+.page4 h3{
+    margin: 40px 0 20px;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+.d_info{
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    width: 250px;
+    margin: 0 auto;
+}
+.pu_size{
+    font-size: 18px;
+    display: inline-block;
+    background: #20b085;
+    color: white;
+    padding: 10px;
+    margin: 0 auto 30px;
 }
 .popup_list{
+    color: #2e2e2e;
     display: flex;
     flex-flow: wrap;
+    justify-content: center;
+}
+.popup_list li+li{
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+.popup_list li:nth-of-type(4n+1){
+    margin-left: 0;
 }
 .card {
     width: 300px;
@@ -956,6 +993,7 @@ table td i{
   
   .card_info p:nth-of-type(1){
     font-size: 20px;
+    font-weight: bold;
   }
   .card_info p:nth-of-type(2){
     font-size: 15px;
