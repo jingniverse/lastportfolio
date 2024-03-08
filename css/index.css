@@ -1,6 +1,11 @@
 body{
     background: #2e2e2e;
     color: white;
+    font-family: Pretendard;
+
+}
+.en{
+    font-family: Caveat;
 }
 .blind {
     position: absolute;
@@ -213,12 +218,13 @@ section>article{
     right: 0;
     top: 150px;
 }
-.sentence .ko{ font-family: Caveat;   font-size: 60px;}
-.sentence .en{
+.sentence .en{ font-family: Caveat;   font-size: 60px;}
+.sentence .ko{
     margin-top: 10px;
     margin-left: 20px;
     font-size: 15px;
     line-height: 18px;
+    font-family: Pretendard;
 }
 .page2_wrap div+div{
     margin-left: 65px;
@@ -265,6 +271,7 @@ section>article{
     margin-right: 50px;
     color: #20b085;
     height: 30px;
+    font-family: ;
 }
 .pro_list span{
     height: 30px;
@@ -300,7 +307,7 @@ section>article{
     margin-top:10px;
 }
 .edu_list p,.exp_list p{
-    width: 350px;
+    width: 360px;
     line-height: 25px;
 }
 .edu_list span,.exp_list span{
@@ -400,33 +407,141 @@ section>article{
     flex-flow: column;    
 }
 .page3 article{
+    position: relative;
 }
 .page3 h2{
-    font-size: 50px;
+    font-size: 60px;
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 100px;
+    font-weight: bold;
 }
-.pb_list li{
+.page3 h2::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #20b085;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.page3 article{
+    width: 1440px;
+}
+.content_wrap{
+    position: relative;
+}
+.content_wrap button{
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    width: 50px;
+    height: 50px;
+    transform: translate(0%,-50%);
+    border: 3px solid #20b085;
+    border-radius: 50%;
+    background: none;
+}
+.content_wrap .prev{
+    left: -55px;
+}
+.content_wrap .next{
+    right: -55px;
+}
+.content_wrap button i{
+    color: #20b085;
+    position: relative;
+    top: 0%;
+    font-size:30px
+}
+.content_wrap .next i{
+    color: #20b085;
+    position: relative;
+    top: 0%;
+    font-size:30px
+}
+.pb_list_wrap{
+    width: 1440px;
+    overflow: hidden;
+}
+
+.pb_list{
+    display: flex;
+    width: 400%;
+    transition: .6s all ease 0s;
+}
+.pb_list>li{
     width: 1440px;
     position: relative;
 }
+.page_dot{
+    position: absolute;
+    display: flex;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.page_dot li{
+    width: 10px;
+    height: 10px;
+    background: #20b085;
+    border-radius: 50%;
+    opacity: .5;
+}
+.page_dot li.on{
+    opacity: 1;
+}
+.page_dot li+li{
+    margin-left: 10px;
+}
+/* .pb_list>li::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+    z-index: 1;
+    background: linear-gradient(90deg, #303030, rgba(0, 0, 0, 0));
+}
+.pb_list>li::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+    z-index: 1;
+    background: linear-gradient(90deg, rgb(55, 55, 55), rgba(0, 0, 0, 0));
+} */
 .s_i_cate{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 5px;
+    right:80px;
     font-family: Caveat;
     display: flex;
     flex-flow: column;
-    font-size: 70px;
+    font-size: 55px;
 }
 .s_i_cate i{
     position: absolute;
-    font-size: 25px;
-    left: 100px;
+    font-size: 20px;
+    left: 78px;
     top: -5px;
     color: #20b085;
 }
+.church .s_i_cate i{
+    left: 122px;
+}
+.naver .s_i_cate i{
+    left: 46px;
+}
+.mgame .s_i_cate i{
+    left: 100px;
+}
+
 .site_img{
     display: flex;
 }
@@ -464,7 +579,7 @@ section>article{
     filter: grayscale(1);
 
 }
-.site_img .pic:hover img{
+.pb_list li:hover .site_img .pic img{
     transform: scale(1.1);
     filter: grayscale(0)
 }
@@ -473,6 +588,70 @@ section>article{
     display: flex;
     flex-flow: column;
     justify-content: flex-end;
+}
+.s_info>p a{
+    position: relative;
+    font-size: 40px;
+    font-family: Cafe24;
+    -webkit-text-stroke: 1px #20b085;
+    color: #2e2e2e;
+    display:inline-block;
+}
+.s_info>p a::after{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    opacity: 0;
+    transition: .6s all ease 0s;
+}
+.donga .s_info>p a::after{
+    content: "동아제약";
+}
+.church .s_info>p a::after{
+    content: "벧엘동산교회";
+}
+.naver .s_info>p a::after{
+    content: "네이버";
+}
+.mgame .s_info>p a::after{
+    content: "Mgame";
+}
+
+.pb_list li:hover .s_info>p a::after{
+    color: #20b085;
+    width: 100%;
+    opacity: 1;
+
+}
+.s_info>span{
+    margin-top: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+
+.s_text{
+    margin-top: 50px;
+}
+.s_text li{
+    display: flex;
+    align-items: flex-end;
+}
+.s_text li+li{
+    margin-top: 10px;
+}
+.s_text li p{
+    font-size: 25px;
+    width: 60px;
+}
+.s_text li span{
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 30px;
 }
 .pb_link{
     margin-top: 50px;
@@ -492,6 +671,10 @@ section>article{
     color: #20b085;
     border-radius: 20px;
     width: 150px;
+    transition: .5s all ease 0s;
+}
+.pb_link a:hover{
+    background: rgba(255, 255, 255);
 }
 .pb_link a+a{
     margin-left: 50px;
@@ -513,6 +696,9 @@ section>article{
     text-transform: capitalize;
     overflow: hidden;
 }
+.pb_link .redesign_site:hover{
+    background: none;
+}
 .redesign_site p{
     z-index: 3;
 }
@@ -533,7 +719,6 @@ section>article{
     position: absolute;
     background: #20b085;
 }
-
 .page4{
 }
 .page5{

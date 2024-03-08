@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/font.css">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&amp;family=Gowun+Batang:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&amp;family=Gowun+Batang:wght@400;700&amp;display=swap&amp;family=Fugaz+One&display=swap&amp;css2?family=Noto+Sans+KR:wght@100..900&display=swap"" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
@@ -55,9 +57,9 @@
                 <h2 class="blind">introduce</h2>
                 <article class="page2_wrap">
                     <p class="sentence">
-                        <span class="ko">Life is a Matter of <br>
+                        <span class="en">Life is a Matter of <br>
                             Direction not Speed</span>
-                        <span class="en">
+                        <span class="ko">
                             삶은 신속한 달음보다 어디로 향하는지에 그 가치가 있다.<br>
                             목표한 방향으로 끈질기게 나아가, 인생을 의미 있게 만드는 사람이 되겠습니다
                         </span>
@@ -71,19 +73,19 @@
                             <li class="m_info1">
                                 <ul class="pro_list">
                                     <li>
-                                        <p>name</p>
+                                        <p class="en">name</p>
                                         <span>김영환</span>
                                     </li>
                                     <li>
-                                        <p>birth</p>
+                                        <p class="en">birth</p>
                                         <span>92.12.23</span>
                                     </li>
                                     <li>
-                                        <p>email</p>
+                                        <p class="en">email</p>
                                         <span>jingblisher@gmail.com</span>
                                     </li>
                                     <li>
-                                        <p>certificate</p>
+                                        <p class="en">certificate</p>
                                         <ul class="cer_list">
                                             <li>운전면허 1종 보통</li>
                                             <li>사회복지사 1급, 2급</li>
@@ -95,7 +97,7 @@
                             <li class="m_info2">
                                 <ul class="info2_list">
                                     <li class="education">
-                                        <p>education</p>
+                                        <p class="en">education</p>
                                         <ul class="edu_list">
                                             <li>
                                                 <span>2023.07 ~ 2023.12</span>
@@ -108,7 +110,7 @@
                                         </ul>
                                     </li>
                                     <li class="experience">
-                                        <p>experience</p>
+                                        <p class="en">experience</p>
                                         <ul class="exp_list">
                                             <li>
                                                 <span>2022.11 ~2023.4</span>
@@ -126,15 +128,15 @@
                         </ul>
                     </div>
                     <div class="skill">
-                        <h4>skill</h4>
+                        <h4 class="en">skill</h4>
                         <ul class="s_list">
-                            <li class="ps"><span>Photoshop</span></li>
-                            <li class="li"><span>Illustrator</span></li>
-                            <li class="jq"><span>Jquery</span></li>
-                            <li class="js"><span>Javascript</span></li>
-                            <li class="ht"><span>HTML5</span></li>
-                            <li class="cs"><span>CSS3</span></li>
-                            <li class="vs"><span>VSCODE</span></li>
+                            <li class="ps en"><span>Photoshop</span></li>
+                            <li class="li en"><span>Illustrator</span></li>
+                            <li class="jq en"><span>Jquery</span></li>
+                            <li class="js en"><span>Javascript</span></li>
+                            <li class="ht en"><span>HTML5</span></li>
+                            <li class="cs en"><span>CSS3</span></li>
+                            <li class="vs en"><span>VSCODE</span></li>
                         </ul>
                     </div>
                 </article>
@@ -143,43 +145,125 @@
             <!-- publishing -->
             <section id="publishing" class="page3">
                 <article>
-                    <h2>publishing</h2>
-                    <div>
-                        <ul class="pb_list">
-                            <li>
-                                <span class="s_i_cate"><i>Responsive Web</i>Redesign Project</span>
-                                <div class="site_img">
+                    <h2 class="en">publishing</h2>
+                    <div class="content_wrap">
+                        <div class="pb_list_wrap">
+                            <ul class="pb_list">
+                                <li class="donga">
+                                    <span class="s_i_cate"><i>Responsive Web</i>Redesign Project</span>
+                                    <div class="site_img">
+                                        <div class="pic">
+                                            <a href="#">
+                                                <img src="./img/Asset 11.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="s_info">
+                                            <p><a href="#">동아제약</a></p>
+                                            <span>#pc #mobile #반응형</span>
+                                            <ul class="s_text">
+                                                <li>
+                                                    <p>page</p><span>Main</span>
+                                                </li>
+                                                <li>
+                                                    <p>tool</p><span>HTML, CSS, JAVASCRIPT</span>
+                                                </li>
+                                            </ul>
+                                            <div class="pb_link">
+                                                <a href="#">plan</a>
+                                                <a href="#">before</a>
+                                                <a href="#" class="redesign_site"><p>go redesign site</p></a>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mgame">
+                                    <div class="site_img">
+                                    <span class="s_i_cate"><i>Redesign</i>Redesign Project</span>
                                     <div class="pic">
-                                        <a href="#">
-                                            <img src="./img/Asset 11.svg" alt="">
-                                        </a>
+                                            <a href="#">
+                                                <img src="./img/mgame.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="s_info">
+                                            <p><a href="#" >Mgame</a></p>
+                                            <span>#pc</span>
+                                            <ul class="s_text">
+                                                <li>
+                                                    <p>page</p><span>Main</span>
+                                                </li>
+                                                <li>
+                                                    <p>tool</p><span>HTML, CSS, JAVASCRIPT</span>
+                                                </li>
+                                            </ul>
+                                            <div class="pb_link">
+                                                <a href="#">plan</a>
+                                                <a href="#">before</a>
+                                                <a href="#" class="redesign_site"><p>go redesign site</p></a>
+                                            </div>    
+                                        </div>
                                     </div>
-                                    <div class="s_info">
-                                        <p><a href="#">동아제약</a></p>
-                                        <span>#pc #mobile #반응형</span>
-                                        <ul class="s_text">
-                                            <li>
-                                                <p>page<span>Main</span></p>
-                                            </li>
-                                            <li>
-                                                <p>tool<span>HTML, CSS, JAVASCRIPT</span></p>
-                                            </li>
-                                        </ul>
-                                        <div class="pb_link">
-                                            <a href="#">plan</a>
-                                            <a href="#">before</a>
-                                            <a href="#" class="redesign_site"><p>go redesign site</p></a>
-                                        </div>    
+                                </li>
+                                <li class="church">
+                                    <span class="s_i_cate"><i>Responsive Web</i>Self Design Project</span>
+                                    <div class="site_img">
+                                        <div class="pic">
+                                            <a href="#">
+                                                <img src="./img/chu.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="s_info">
+                                            <p><a href="#" >벧엘동산교회</a></p>
+                                            <span>#pc #mobile #반응형</span>
+                                            <ul class="s_text">
+                                                <li>
+                                                    <p>page</p><span>Main + Sub 3page</span>
+                                                </li>
+                                                <li>
+                                                    <p>tool</p><span>HTML, CSS, JAVASCRIPT</span>
+                                                </li>
+                                            </ul>
+                                            <div class="pb_link">
+                                                <a href="#">plan</a>
+                                                <a href="#" class="redesign_site"><p>go redesign site</p></a>
+                                            </div>    
+                                        </div>
                                     </div>
-                                </div>
-                               
-                            </li>
-                            <li>
-                                <div></div>
-                            </li>
-                            <li>
-                                <div></div>
-                            </li>
+                                </li>
+                                <li class="naver">
+                                    <span class="s_i_cate"><i>clone coding</i>Clone Coding</span>
+                                    <div class="site_img">
+                                        <div class="pic">
+                                            <a href="#">
+                                                <img src="./img/Naver_icon_2018.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="s_info">
+                                            <p><a href="#" >네이버</a></p>
+                                            <span>#pc</span>
+                                            <ul class="s_text">
+                                                <li>
+                                                    <p>page</p><span>Main</span>
+                                                </li>
+                                                <li>
+                                                    <p>tool</p><span>HTML, CSS, JAVASCRIPT</span>
+                                                </li>
+                                            </ul>
+                                            <div class="pb_link">
+                                                <a href="#" class="redesign_site"><p>go design site</p></a>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <button class="prev"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="next"><i class="fa-solid fa-angle-right"></i></button>
+                        <ul class="page_dot">
+                            <li class="on"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
                         </ul>
                     </div>
                 </article>
