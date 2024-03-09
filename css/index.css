@@ -2,7 +2,6 @@ body{
     background: #2e2e2e;
     color: white;
     font-family: Pretendard;
-
 }
 .en{
     font-family: Caveat;
@@ -88,13 +87,12 @@ nav:hover ul li:hover a::after{
     right: auto;
     width: 100%;
 }
-
-
 main>section{
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
     display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
 }
@@ -135,7 +133,7 @@ section>article{
     height: 100vh;
     display: flex;
     transform: skewX(-30deg);
-    display: none;
+    /* display: none; */
 }
 .hahaha img{
     width: 200px;
@@ -148,7 +146,7 @@ section>article{
 .right{
     width: 100%;
     height: 100%;
-    background: #FF0080;
+    background: #2e2e2e;
     right:-50%;
     position: absolute;
 }
@@ -223,7 +221,7 @@ section>article{
     margin-top: 10px;
     margin-left: 20px;
     font-size: 15px;
-    line-height: 18px;
+    line-height: 30px;
     font-family: Pretendard;
 }
 .page2_wrap div+div{
@@ -408,7 +406,9 @@ section>article{
 .page3 article{
     position: relative;
     height: 940px;
+    padding-top: 150px;
 }
+.page5 h2,
 .page4 h2,
 .page3 h2{
     font-size: 60px;
@@ -417,6 +417,8 @@ section>article{
     margin-bottom: 100px;
     font-weight: bold;
 }
+.page1 p::after,
+.page5 h2::after,
 .page4 h2::after,
 .page3 h2::after{
     content: "";
@@ -441,7 +443,7 @@ section>article{
     margin-left: 15px;
 }
 .viewstyle li button{
-    width: 30px;
+    width: 31px;
     height: 30px;
     background: none;
     border-radius: 50%;
@@ -450,6 +452,7 @@ section>article{
     background: #20b085;
 }
 .viewstyle li button i{
+    font-size: 15px;
     color: #20b085;
 }
 .viewstyle li.on button i{
@@ -467,19 +470,25 @@ section>article{
 .content_wrap button{
     cursor: pointer;
     position: absolute;
-    top:50%;
+    bottom: -90px;
     width: 50px;
     height: 50px;
-    transform: translate(0%,-50%);
     border: 3px solid #20b085;
     border-radius: 50%;
-    background: none;
+    background: white;
+    transition: .6s all ease 0s;
+}
+.content_wrap button:hover{
+    background: #20b085;
+}
+.content_wrap button:hover i{
+    color: white;
 }
 .content_wrap .prev{
-    left: -55px;
+    left: 40%;
 }
 .content_wrap .next{
-    right: -55px;
+    right: 40%;
 }
 .content_wrap button i{
     color: #20b085;
@@ -510,7 +519,7 @@ section>article{
 .page_dot{
     position: absolute;
     display: flex;
-    bottom: -50px;
+    bottom: -70px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -861,6 +870,9 @@ table td i{
     color: #20b085;
     margin-left: 20px;
 }
+.page4{
+    height: 100%;
+}
 .page4 article{
     display: flex;
     flex-flow: column;
@@ -887,7 +899,7 @@ table td i{
     background: #20b085;
     color: white;
     padding: 10px;
-    margin: 0 auto 30px;
+    margin: 0 auto 80px;
 }
 .popup_list{
     color: #2e2e2e;
@@ -982,7 +994,7 @@ table td i{
     background: white;
     transition: all 0.7s ease;
     opacity: 0;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid #20b085;
     padding: 5px;
     border-radius: 20px;
     pointer-events: none;
@@ -1048,29 +1060,111 @@ table td i{
     transform: translate3d(0%, 0px, 300px);
     opacity: 1;
   }
-  
   .character {
-    pointer-events: none;
-    width: 100%;
-    opacity: 0;
-    transition: all 0.5s;
-    position: absolute;
-    z-index: -1;
-  }
-  
-  .card:hover .character {
-    opacity: 1;
-    transform: translate3d(0%, -30%, 100px);
-  }
-  .banner.card:hover .character {
-    border: 3px solid silver;
-    transform: translate3d(0%, -50%, 100px);
-  
-  }
-  
-.page5{
-}
+      pointer-events: none;
+      width: 100%;
+      opacity: 0;
+      transition: all 0.5s;
+      position: absolute;
+      z-index: -1;
+    }
+    
+    .card:hover .character {
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    .banner.card:hover .character {
+        border: 3px solid #20b085;
+        transform: translate3d(0%, -50%, 100px);
+    }
+    .pu_title{
+     text-transform: capitalize; 
+    }
+  .d_banner>div{
 
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner_list{
+    color: #2e2e2e;
+  display: flex;
+  flex-flow: row wrap;
+  width: 1370px;
+  justify-content: space-around;
+  }
+  .banner_list li:nth-of-type(2n){
+    margin-right: 0;
+    margin-bottom: 70px;
+  }
+  .banner_list li:last-of-type{
+    margin: 0;
+  }
+  /* 배너 개인색 */
+  .banner .cm .co_1{ background: #A80D35;}
+  .banner .cm .co_2{ background: #FFF1DC;}
+  .banner .cm .co_3{ background: #F8E2D5;}
+  
+  .banner .bf .co_1{ background: #FED402;}
+  .banner .bf .co_2{ background: #D9B500;}
+  .banner .bf .co_3{ background: black;}
+  
+  .banner .da .co_1{ background: #00ACCD;}
+  .banner .da .co_2{ background: white;}
+  
+  .banner .gama .co_1{ background: #00ACCD;}
+  .banner .gama .co_2{ background: #F3F3F3;}
+  .banner .gama .co_3{ background: black;}
+  
+.page5 .text_box{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.text_box p{
+    margin: 100px 0 200px;
+    font-size: 80px;
+    letter-spacing: 5px;
+    transition: .6s all ease 0s;
+    display: inline-block;
+    position: relative;
+}
+.text_box p::before{
+    content: "";
+    width: 0%;
+    height: 5px;
+    position: absolute;
+    left: 49.5%;
+    display: inline-block;
+    background: #20b085;
+    bottom: -15px;
+    transition:.6s all ease 0s
+}
+.text_box p::after{
+    content: "";
+    width: 0%;
+    height: 5px;
+    position: absolute;
+    right: 50.5%;
+    display: inline-block;
+    background: #20b085;
+    bottom: -15px;
+    transition:.6s all ease 0s
+}
+.text_box p:hover::before{
+    width: 50%;
+}
+.text_box p:hover::after{
+    width: 50%;
+}
+.text_box p:hover{
+    color: #20b085;
+}
+.text_box span{
+    font-size: 25px;
+    letter-spacing: 10px;
+}
 
 
 

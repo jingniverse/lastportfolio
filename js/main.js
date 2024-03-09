@@ -66,7 +66,50 @@ $(".viewstyle>li").click(function() {
     });
 });
 
+let images = [];
 
+function preload() {
+  for(let i = 0; i < preload.arguments.lenght; i++) {
+    images[i] = new Image();
+    images[i].src = preload.arguments.src;
+  }
+}
+
+preload(
+  "./img/SVG/Asset 3.svg",
+  "./img/SVG/Asset 1.svg",
+  "./img/Asset 11.svg",
+  "./img/my.png",
+  "./img/mgame.svg",
+  "./img/Naver_icon_2018.svg",
+  "./img/Asset 11.svg",
+  "./img/chu.svg",
+  "./img/mgame.svg",
+  "./img/firepop.png",
+  "./img/11st.png",
+  "./img/nodampop.png",
+  "./img/Arsenalpop.png",
+  "./img/newyear2.png",
+  "./img/blackpop.png",
+  "./img/newyear.png",
+  "./img/gamabanner.png",
+  "./img/bfbanner.png",
+  "./img/christmas-banner.png",
+  "./img/pepsipop.png",
+  "./img/Dong-A-banner.png",
+  "./img/11stmock.png",
+  "./img/firemock.png",
+  "./img/nodammock.png",
+  "./img/arsmock.png",
+  "./img/newyearmock2.png",
+  "./img/blackmock.png",
+  "./img/newyearmock.png",
+  "./img/pepsimock.png",
+  "./img/bfmock.jpg",
+  "./img/christmock.png",
+  "./img/dongamock.jpg",
+  "./img/gamamock.png"
+)
 
 
 
