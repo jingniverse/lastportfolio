@@ -33,7 +33,7 @@
     }
     .sentence{
         width:300px;
-        top: 120px;
+        top: 185px;
     }
     .sentence .en{
         font-size: 40px;
@@ -57,7 +57,6 @@
     }
     .pro_list{
         margin-right: 40px;
-        margin-bottom: ;
     }
     .pro_list p{
         font-size: 23px;
@@ -80,7 +79,6 @@
     }
     .m_info2{
         width: 750px;
-        display:;
     }
     .info2_list{
         margin-top: 50px;
@@ -144,19 +142,45 @@
         margin-bottom: 50px;
     }
     .pb_list_wrap{
-        width: 750px;
+        width: 740px;
     }
     .viewstyle{
         top: 0;
     }
     .v_s_output{
+        width: 740px;
         margin-top: 50px;
+    }
+    .s_info>p a{
+        font-size: 35px;
+    }
+    .site_img{
+        width: 740px;
+        justify-content: center;
     }
     .pb_list>li{
         width: 750px;
     }
     .s_i_cate{
+        font-size: 40px;
         right: 20px;
+        top:10px;
+    }
+    .s_i_cate i{
+        font-size: 18px;
+        top: -10px;
+        left: 40px;
+    }
+    .mgame .s_i_cate i{
+        left: 75px;
+    }
+    .church .s_i_cate i{
+        left: 85px;
+        top: -12px;
+    }
+    .naver .s_i_cate i{
+        left: 25px;
+        top: -12px;
     }
     .site_img .pic{
         width: 300px;
@@ -166,18 +190,33 @@
         width: 200px;
         height: 200px;
     }
+    .site_img div+div{
+        margin-left: 40px;
+    }
+    .s_text{
+        margin-top: 25px;
+    }
     .pb_link{
+        margin-top: 20px;
         justify-content: flex-start;
     }
     .pb_link a{
         padding: 5px 10px;
         width: 100px;
         height: 50px;
+        font-size: 23px;
         box-sizing: border-box;
     }
     .pb_link a+a{
-        margin-left: 30px;
+        margin-left: 20px;
     }
+    .pb_link .redesign_site{
+        font-size: 23px;
+    }
+    .s_text li p{
+        font-size: 23px;
+    }
+
     .content_wrap .prev{
         left: 35%;
     }
@@ -189,6 +228,10 @@
         flex-flow: wrap;
         justify-content: center;
         margin-top: 0;
+    }
+    .bv_list li{
+        width: 250px;
+        height: 250px;
     }
     .bv_list li+li{
         margin: 0;
