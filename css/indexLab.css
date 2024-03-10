@@ -109,4 +109,27 @@
     .list_view table{
         width: 1000px;
     }
+    .popup_list li+li{
+        margin-left: 35px;
+    }
+    .popup_list li:nth-of-type(3n+1){
+        margin-left: 0;
+    }
+    .popup_list li:nth-of-type(5n){
+        margin-left:30px;
+    }
+    .card:hover .card_info{
+        width: 85%;
+    }
+
+    .banner_list{
+        width: 1000px;
+    }
+    .card.banner{
+        width: 450px;
+        height: 225px;
+    }
+    .text_box{
+        width: 1000px;
+    }
 }

@@ -133,7 +133,7 @@ section>article{
     height: 100vh;
     display: flex;
     transform: skewX(-30deg);
-    /* display: none; */
+    display: none;
 }
 .hahaha img{
     width: 200px;
@@ -1116,7 +1116,12 @@ table td i{
   .banner .gama .co_1{ background: #00ACCD;}
   .banner .gama .co_2{ background: #F3F3F3;}
   .banner .gama .co_3{ background: black;}
-  
+ 
+  .controler3{
+    display: none;
+  }
+
+
 .page5 .text_box{
     display: flex;
     flex-flow: column;

@@ -1,0 +1,207 @@
+@media all and (min-width:768px) and (max-width:1023px){
+    section>article{
+        width: 750px;
+        height: 1000px;
+        padding-top: 100px;
+    }
+    .page1 article{
+        padding-left: 50px;
+        height: 1000px;
+    }
+    .page1 p{
+        width: 600px;
+        font-size: 60px;
+        line-height:80px;
+    }
+    .page2>article {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .page2_wrap{
+        flex-flow: wrap;
+    }
+    .page2 .pic{
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        top: 250px;
+        left: 50px;
+    }
+    .page2_wrap div+div{
+        margin-left: 0;
+    }
+    .sentence{
+        width:300px;
+        top: 120px;
+    }
+    .sentence .en{
+        font-size: 40px;
+    }
+    .sentence .ko{
+        display: none;
+    }
+    .sentence .en br{
+        display: block;
+    }
+    .page2_wrap .info{
+        margin-left: 0px;
+    }
+    .info_list{
+        width: 750px;
+        margin-top: 225px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    .pro_list{
+        margin-right: 40px;
+        margin-bottom: ;
+    }
+    .pro_list p{
+        font-size: 23px;
+        width: 100px;
+        margin-right: 20px;
+    }
+    .pro_list span{
+        font-size: 18px;
+    }
+    .cer_list{
+        font-size: 18px;
+    }
+    .info_list>li+li{
+        margin-top: 20px;
+    }
+    .info2_list>li>p{
+        width: 120px;
+        font-size: 23px;
+        text-align: left;
+    }
+    .m_info2{
+        width: 750px;
+        display:;
+    }
+    .info2_list{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .info2_list>li{
+        flex-flow: column;
+    }
+    .info2_list>li+li{
+        margin-top:0;
+        margin-left: 20px;
+    }
+    .edu_list p, .exp_list p{
+        width: 260px;
+        font-size: 18px;
+    }
+    .skill{
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+    }
+    .s_list>li+li{
+        margin-left: 30px;
+    }
+    .s_list>li:nth-of-type(3n+1){
+        margin-left: 30px;
+    }
+    .s_list>li::after{
+        width: 50px;
+        height: 50px;
+    }
+    .s_list .ps::after{
+        background-size: 50px;    }
+    .s_list .li::after{
+        background-size: 50px;    }
+    .s_list .jq::after{
+        background-size: 50px;   }
+    .s_list .js::after{
+        background-size: 50px 50px;    }
+    .s_list .ht::after{
+        background-size:50px 50px;    }
+    .s_list .cs::after{
+        background-size:50px 50px;    }
+    .s_list .vs::after{
+        background-size: 50px;    }
+    .s_list{
+        width: 100%;
+        align-items: center;
+    }
+    .s_list>li:nth-of-type(3n){
+        margin-bottom:0 ;
+    }
+
+    .page3 article{
+        width: 750px;
+        padding-top: 100px;
+    }
+    .page3 h2{
+        font-size: 45px;
+        margin-bottom: 50px;
+    }
+    .pb_list_wrap{
+        width: 750px;
+    }
+    .pb_list>li{
+        width: 750px;
+    }
+    .s_i_cate{
+        right: 20px;
+    }
+    .site_img{
+        flex-flow: column;
+    }
+    .pb_link{
+        justify-content: flex-start;
+    }
+    .pb_link a{
+        padding: 5px 10px;
+        width: 100px;
+        height: 50px;
+        box-sizing: border-box;
+    }
+    .pb_link a+a{
+        margin-left: 30px;
+    }
+    .bv_list {
+        flex-flow: wrap;
+        justify-content: center;
+        margin-top: 0;
+    }
+    .bv_list li+li{
+        margin: 0;
+    }
+    .box_view .bv_list li{
+        margin: 20px;
+    }
+    .list_view table{
+        width: 1000px;
+    }
+    .popup_list li+li{
+        margin-left: 35px;
+    }
+    .popup_list li:nth-of-type(3n+1){
+        margin-left: 0;
+    }
+    .popup_list li:nth-of-type(5n){
+        margin-left:30px;
+    }
+    .card:hover .card_info{
+        width: 85%;
+    }
+
+    .banner_list{
+        width: 1000px;
+    }
+    .card.banner{
+        width: 450px;
+        height: 225px;
+    }
+    .text_box{
+        width: 1000px;
+    }
+}
