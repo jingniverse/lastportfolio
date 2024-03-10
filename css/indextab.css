@@ -146,14 +146,25 @@
     .pb_list_wrap{
         width: 750px;
     }
+    .viewstyle{
+        top: 0;
+    }
+    .v_s_output{
+        margin-top: 50px;
+    }
     .pb_list>li{
         width: 750px;
     }
     .s_i_cate{
         right: 20px;
     }
-    .site_img{
-        flex-flow: column;
+    .site_img .pic{
+        width: 300px;
+        height: 300px;
+    }
+    .site_img .pic img{
+        width: 200px;
+        height: 200px;
     }
     .pb_link{
         justify-content: flex-start;
@@ -167,6 +178,13 @@
     .pb_link a+a{
         margin-left: 30px;
     }
+    .content_wrap .prev{
+        left: 35%;
+    }
+    .content_wrap .next{
+        right: 35%;
+    }
+
     .bv_list {
         flex-flow: wrap;
         justify-content: center;
@@ -179,7 +197,15 @@
         margin: 20px;
     }
     .list_view table{
-        width: 1000px;
+        width: 750px;
+    }
+    .list_view table th{
+        vertical-align: middle;
+        text-align: center;
+    }
+    .list_view table td{
+        vertical-align: middle;
+        text-align: center;
     }
     .popup_list li+li{
         margin-left: 35px;
