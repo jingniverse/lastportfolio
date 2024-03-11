@@ -451,6 +451,10 @@
     .banner_list li:last-of-type{
         margin: 25px;
     }
+    .banner_wrap .page_dot, .popup_wrap .page_dot{
+        display: flex;
+    }
+
     .card.banner{
         width: 400px;
         height: 200px;
