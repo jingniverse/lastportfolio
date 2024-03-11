@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/indexLab.css">
     <link rel="stylesheet" href="./css/indextab.css">
+    <link rel="stylesheet" href="./css/indexmobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&amp;family=Gowun+Batang:wght@400;700&amp;display=swap&amp;family=Fugaz+One&display=swap&amp;css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
@@ -40,6 +41,7 @@
             </nav>
             <button>
                 <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-close off"></i>
             </button>
         </header>
         <main>
@@ -343,35 +345,39 @@
                         </li>
                         <li class="list_view">
                             <table>
-                                <th>name</th>
-                                <th>style</th>
-                                <th>page</th>
-                                <th>tool</th>
-                                <th>go site</th>
-                                <tr></tr>
-                                <td>동아제약</td>
-                                <td>#PC #MOBILE #반응형<i>#Redesign Project</i></td>
-                                <td>main</td>
-                                <td>HTML, CSS, JAVASCRIPT</td>
-                                <td><a href="https://jingniverse.github.io/last/DONG_A/" target="_blank">바로가기</a></td>
-                                <tr></tr>
-                                <td>Mgame</td>
-                                <td>#PC<i>#Redesign Project</i></td>
-                                <td>main</td>
-                                <td>HTML, CSS, JAVASCRIPT</td>
-                                <td><a href="https://jingniverse.github.io/mgame/" target="_blank">바로가기</a></td>
-                                <tr></tr>
-                                <td>벧엘동산교회</td>
-                                <td>#PC #MOBILE #반응형<i>#Self Design Project</i></td>
-                                <td>main + Sub 3page</td>
-                                <td>HTML, CSS, JAVASCRIPT</td>
-                                <td><a href="https://jingniverse.github.io/church/" target="_blank">바로가기</a></td>
-                                <tr></tr>
-                                <td>네이버</td>
-                                <td>#PC<i>#Clone Coding</i></td>
-                                <td>main</td>
-                                <td>HTML, CSS, JAVASCRIPT</td>
-                                <td><a href="https://jingniverse.github.io/javer/" target="_blank">바로가기</a></td>
+                                <thead>
+                                    <th>name</th>
+                                    <th>style</th>
+                                    <th>page</th>
+                                    <th>tool</th>
+                                    <th>go site</th>
+                                </thead>
+                                <tbody>
+                                    <tr></tr>
+                                    <td>동아제약</td>
+                                    <td>#PC #MOBILE #반응형<i>#Redesign Project</i></td>
+                                    <td>main</td>
+                                    <td>HTML, CSS, JAVASCRIPT</td>
+                                    <td><a href="https://jingniverse.github.io/last/DONG_A/" target="_blank">바로가기</a></td>
+                                    <tr></tr>
+                                    <td>Mgame</td>
+                                    <td>#PC<i>#Redesign Project</i></td>
+                                    <td>main</td>
+                                    <td>HTML, CSS, JAVASCRIPT</td>
+                                    <td><a href="https://jingniverse.github.io/mgame/" target="_blank">바로가기</a></td>
+                                    <tr></tr>
+                                    <td>벧엘동산교회</td>
+                                    <td>#PC #MOBILE #반응형<i>#Self Design Project</i></td>
+                                    <td>main + Sub 3page</td>
+                                    <td>HTML, CSS, JAVASCRIPT</td>
+                                    <td><a href="https://jingniverse.github.io/church/" target="_blank">바로가기</a></td>
+                                    <tr></tr>
+                                    <td>네이버</td>
+                                    <td>#PC<i>#Clone Coding</i></td>
+                                    <td>main</td>
+                                    <td>HTML, CSS, JAVASCRIPT</td>
+                                    <td><a href="https://jingniverse.github.io/javer/" target="_blank">바로가기</a></td>
+                                </tbody>
                             </table>
                         </li>
                     </ul>
@@ -508,6 +514,14 @@
                                 </div>
                             </li>
                         </ul>
+                        <button class="prev"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="next"><i class="fa-solid fa-angle-right"></i></button>
+                        <ul class="page_dot">
+                            <li class="on"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
                     <div class="d_banner">
                         <div class="en">
@@ -577,10 +591,12 @@
                                     </div>
                                 </li>
                             </ul>
-                            <div class="controler3">
-                                <button class="btn_prev3" href="#">&lt;</button>
-                                <button class="btn_next3" href="#">&gt;</button>
-                            </div>
+                            <button class="prev"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="next"><i class="fa-solid fa-angle-right"></i></button>
+                        <ul class="page_dot">
+                            <li class="on"></li>
+                            <li></li>
+                        </ul>
                         </div>
                     </div>
                 </article>

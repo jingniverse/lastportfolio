@@ -1,3 +1,4 @@
+html { scroll-behavior: smooth; }
 body{
     background: #2e2e2e;
     color: white;
@@ -32,8 +33,11 @@ header button{
     height: 40px;
     border: 0;
     background: none;
-    opacity: 0;
-    pointer-events: none;
+    /* opacity: 0;
+    pointer-events: none; */
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 header button i{
     color: white;
@@ -41,6 +45,9 @@ header button i{
     cursor: pointer;
 }
 
+.logo a{
+    display: inline-block;
+}
 .logo img{
     width: 100px;
     height: 50px;
@@ -86,6 +93,10 @@ nav:hover ul li:hover a::after{
     left: 0;
     right: auto;
     width: 100%;
+}
+header button:hover i{
+    color: #20b085;
+    transition: .6s color ease 0s;
 }
 main>section{
     width: 100%;
@@ -467,7 +478,7 @@ section>article{
 .content_wrap{
     position: relative;
 }
-.content_wrap button{
+.content_wrap button,.popup_wrap button,.banner_wrap button{
     cursor: pointer;
     position: absolute;
     bottom: -90px;
@@ -478,9 +489,14 @@ section>article{
     background: white;
     transition: .6s all ease 0s;
 }
+
+.popup_wrap button:hover,
+.banner_wrap button:hover,
 .content_wrap button:hover{
     background: #20b085;
 }
+.popup_wrap button:hover i,
+.banner_wrap button:hover i,
 .content_wrap button:hover i{
     color: white;
 }
@@ -490,6 +506,8 @@ section>article{
 .content_wrap .next{
     right: 40%;
 }
+.popup_wrap button i,
+.banner_wrap button i,
 .content_wrap button i{
     color: #20b085;
     position: relative;
@@ -497,7 +515,6 @@ section>article{
     font-size:30px
 }
 .content_wrap .next i{
-    color: #20b085;
     position: relative;
     top: 0%;
     font-size:30px
@@ -516,12 +533,20 @@ section>article{
     width: 1440px;
     position: relative;
 }
+.banner_wrap .page_dot,
+.popup_wrap .page_dot,
 .page_dot{
     position: absolute;
     display: flex;
     bottom: -70px;
     left: 50%;
     transform: translateX(-50%);
+}
+.banner_wrap .page_dot,
+.popup_wrap .page_dot,
+.banner_wrap button,
+.popup_wrap button{
+    display: none;
 }
 .page_dot li{
     width: 10px;
@@ -1081,7 +1106,6 @@ table td i{
      text-transform: capitalize; 
     }
   .d_banner>div{
-
     display: flex;
     flex-flow: column;
     justify-content: center;
