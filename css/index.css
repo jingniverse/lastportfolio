@@ -459,6 +459,9 @@ section>article{
 .viewstyle li button{
     width: 33px;
     height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-sizing: border-box;
     background: none;
     border: 1px solid #20b085;
