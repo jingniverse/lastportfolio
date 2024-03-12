@@ -216,8 +216,49 @@ preload(
   "./img/gamamock.png"
 )
 
+if($(window).width() < 480) {
+    // window 크기가 768보다 작을때
+    let pcount = 0
+$(".popup_wrap .next").click(function(){
+    pcount++
+    if(pcount>3){pcount=0}
+    $(".popup_list").css("transform",`translateX(${(-25*pcount)}%)`)
+    $(".popup_wrap .page_dot>li").removeClass("on")
+    $(".popup_wrap .page_dot>li").eq(pcount).addClass("on")
 
-
+    if(pcount==3){
+        $(".popup_wrap .next").hide()
+     }else {
+     $(".popup_wrap .next").show()
+    }
+    if (pcount === 0) {
+        $(".popup_wrap .prev").hide();
+    } else {
+        $(".popup_wrap .prev").show();     
+    }
+})
+$(".popup_wrap .prev").click(function(){
+    pcount--
+    if(pcount<0){pcount=3}
+    $(".popup_list").css("transform",`translateX(${(-25*pcount)}%)`)
+    $(".popup_wrap .page_dot>li").removeClass("on")
+    $(".popup_wrap .page_dot>li").eq(pcount).addClass("on")
+    if(pcount==0){
+        $(".popup_wrap .prev").hide()
+     }else{
+     $(".popup_wrap .prev").show()
+    }
+    if(pcount==3){
+        $(".popup_wrap .next").hide()
+     }else {
+     $(".popup_wrap .next").show()
+    }
+    
+})
+$(document).ready(function() {
+    $(".popup_wrap .prev").hide(); 
+});
+}
 
 })
 
