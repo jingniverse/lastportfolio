@@ -454,13 +454,17 @@ section>article{
     margin-left: 15px;
 }
 .viewstyle li button{
-    width: 31px;
-    height: 30px;
+    width: 32px;
+    height: 31px;
+    box-sizing: border-box;
     background: none;
+    border: 2px solid #20b085;
     border-radius: 50%;
 }
 .viewstyle li.on button{
     background: #20b085;
+    border: 2px solid white;
+
 }
 .viewstyle li button i{
     font-size: 15px;
