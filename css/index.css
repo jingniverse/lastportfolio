@@ -181,7 +181,7 @@ section>article{
     flex-flow: column;
     justify-content: space-between;
     padding-left: 150px;
-    min-height: 900px;
+    min-height: 700px;
     z-index: 2;
 }
 .page1 p{
