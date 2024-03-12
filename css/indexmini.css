@@ -241,7 +241,7 @@
         margin-bottom: 50px;
     }
     .pb_list_wrap{
-        width: 260px;
+        width: 280px;
         height: 700px;
         display: flex;
     }
@@ -273,9 +273,10 @@
     .pb_list>li{
         width: 260px;
         display: flex;
-        justify-content: center;
-        margin: 0 auto;
+        justify-content: space-evenly;
+        margin: 0 10px;
         flex-flow: column;
+
     }
     .site_img{
         margin: 0 auto;
