@@ -1,4 +1,11 @@
 @media all and (min-width:768px) and (max-width:1023px){
+    header{
+        padding: 10px 20px;
+    }
+    .logo img{
+        width: 80px;
+        height: 40px;
+    }
     header>nav{
         position: fixed;
         top: 0;
@@ -34,7 +41,6 @@
 
     section>article{
         width: 750px;
-        height: 1000px;
         padding-top: 100px;
     }
     .page1 article{
@@ -59,7 +65,7 @@
         position: absolute;
         width: 350px;
         height: 350px;
-        top: 250px;
+        top: 170px;
         left: 50px;
     }
     .page2_wrap div+div{
@@ -67,7 +73,7 @@
     }
     .sentence{
         width:300px;
-        top: 185px;
+        top: 125px;
     }
     .sentence .en{
         font-size: 40px;
@@ -83,7 +89,7 @@
     }
     .info_list{
         width: 750px;
-        margin-top: 225px;
+        margin-top: 150px;
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-end;
@@ -288,6 +294,15 @@
     .list_view table td{
         vertical-align: middle;
         text-align: center;
+    }
+    .list_view table td:first-of-type{
+        width: 110px;
+    }
+    .list_view table td:nth-of-type(2){
+        width: 200px ;
+    }
+    .list_view table td i{
+        display: none;
     }
     .page4 article{
         height: 100%;
