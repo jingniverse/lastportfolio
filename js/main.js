@@ -18,8 +18,16 @@ $(document).ready(function(){
     })
 
     
+    $('.donga .plan').click(function(e){
+        $('.plan_popup').addClass('on')
+        e.preventDefault()
 
-   
+     })
+     $('.close').click(function(){
+      $('.plan_popup').removeClass('on')
+    })
+
+
 
 
 
