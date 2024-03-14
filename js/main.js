@@ -33,11 +33,11 @@ $(document).ready(function(){
 
 
 
-$('.hahaha img').click(function(){
+$('.pre_open_page span').click(function(){
     $('.left').addClass('boxani')
     $('.right').addClass('boxani2')
-    $('.hahaha img').addClass('totop')
-    $('.hahaha').addClass('totop2')
+    $('.pre_open_page span').addClass('totop')
+    $('.pre_open_page').addClass('totop2')
 })
 
 

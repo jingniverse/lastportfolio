@@ -139,7 +139,8 @@ section>article{
     z-index: 2;
     box-sizing: border-box;
 }
-.hahaha{
+.pre_open_page{
+    position: relative;;
     z-index:15;
     position: fixed;
     width: 100vw;
@@ -147,13 +148,36 @@ section>article{
     display: flex;
     transform: skewX(-30deg);
 }
-.hahaha img{
+.pre_open_page span{
     width: 200px;
-    height: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    background: url(../img/SVG/Asset\ 3.svg)no-repeat;
+    align-items: center;
+    transform: skewX(30deg);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    cursor: pointer;
+}
+.pre_open_page span::after{
+    text-transform: capitalize;
+    content: "click me";
+    background:#2e2e2e;
+    border: 1px solid #20b085;
+    position: absolute;
+    display: flex;
+    font-family: Caveat;
+    bottom: -30px;
+    width: 100px;
+    height: 40px;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    color: #20b085;
+    border-radius: 20px;
+    animation: updown .5s ease infinite 0s alternate;
 }
 .right{
     width: 100%;
