@@ -406,6 +406,9 @@ section>article{
     width: 60px;
     height: 60px;
 }
+.s_list .ps span{
+    animation: updown 1.3s ease infinite 1s alternate;
+}
 .s_list .ps::after{
     background: url(../img/ps.png) no-repeat;
     background-size: 60px;
@@ -1123,7 +1126,7 @@ table td i{
   .pep .co_3{background: #056BAA ;}
   /* 팝업 개인 색 끝 */
   .card:hover .card_info {
-    transform: translate3d(0%, 0px, 300px);
+    transform: translate3d(0%, -30px, 300px);
     opacity: 1;
   }
   .character {
@@ -1141,7 +1144,7 @@ table td i{
     }
     .banner.card:hover .character {
         border: 3px solid #20b085;
-        transform: translate3d(0%, -50%, 100px);
+        transform: translate3d(0%, -65%, 100px);
     }
     .pu_title{
      text-transform: capitalize; 
