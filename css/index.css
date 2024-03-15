@@ -381,7 +381,6 @@ section>article{
 .s_list>li span{
     position: absolute;
     padding: 5px 10px;
-    display: none;
     justify-content: center;
     align-items: center;
     background: #303030;
@@ -390,13 +389,20 @@ section>article{
     border: 1px solid #20b085;
     border-radius: 10px;
     box-sizing: border-box;
-    left: 50%;
-    transform: translate(-50%,0);
+    left: calc(50% - 40px);
     font-size: 15px;
     letter-spacing: 1px;
     height: 30px;
     z-index: 2;
 }
+.test{
+    display: flex;
+    opacity: 1;
+}
+.s_list>li:hover span{
+    opacity: 1;
+}
+
 .s_list>li:hover span{
     display: flex;
 }
@@ -406,9 +412,8 @@ section>article{
     width: 60px;
     height: 60px;
 }
-.s_list .ps span{
-    animation: updown 1.3s ease infinite 1s alternate;
-}
+.s_list .ps span.test {
+    animation: updown 1.3s ease infinite 1s alternate;}
 .s_list .ps::after{
     background: url(../img/ps.png) no-repeat;
     background-size: 60px;
