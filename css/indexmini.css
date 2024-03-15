@@ -480,6 +480,17 @@
         width: 120px;
         margin-left: 10px;
     }
+    .color_box span::after{
+        left: -13px;
+    }
+    .ff .co_1::after,.newy2 .co_1::after,
+    .st11 .co_1::after,.st11 .co_3::after{
+        width: 70px;
+        left: -20px;
+        text-align: center;
+        bottom: -35px;
+        line-height: 14px;
+    }
     .d_banner .banner_wrap{
         width: 280px;
         height: 600px;

@@ -1025,7 +1025,7 @@ table td i{
     -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75); */
   }
   
-  
+/*   
   .wrapper::after {
     content: "";
     opacity: 0;
@@ -1051,7 +1051,7 @@ table td i{
   .card:hover
   .wrapper::after {
     opacity: 1;
-  }
+  } */
   
   .card:hover .wrapper::after {
     height: 120px;
@@ -1071,7 +1071,6 @@ table td i{
     border: 1px solid #20b085;
     padding: 5px;
     border-radius: 20px;
-    pointer-events: none;
   }
   .card_info p{
     padding: 4px;
@@ -1096,39 +1095,87 @@ table td i{
     width: 50px;
     height:15px;
     margin: 3px;
+    position: relative;
   }
+  .color_box span::after{
+    content: "";
+    position: absolute;
+    bottom: -23px;
+    border-radius: 8px;
+    display: flex;
+    padding: 3px;
+    font-size: 13px;
+    width: 56px;
+    justify-content: center;
+    align-items: center;
+    left: -7px;
+    color: #20b085;
+    border: 1px solid #20b085;
+    background: #2e2e2e;
+    opacity: 0;
+    text-transform: lowercase;
+  }
+  .color_box span:hover::after{
+    opacity: 1;
+  }
+
   /* 팝업 개인 색 */
   
   .ff .co_1{background: linear-gradient(0.25turn, #FF4A3F,#FF6300, #FFFFFF,#F59842,#F49440);}
+.ff .co_1::after,.newy2 .co_1::after,
+.st11 .co_1::after,.st11 .co_3::after{
+    width: 100px;
+    left: -29px;
+    content:"개발자도구 참고" ;
+}
   .ff .co_2{background: #D82D34 ;}
-  .ff .co_3{background: #000000;}
-  
+  .ff .co_2::after{content:"#D82D34" ;}
+  .ff .co_3{background: #000000; }
+  .ff .co_3::after{content: "#000000";}
+ 
   .st11 .co_1{background: linear-gradient(0.25turn, #DB334D, #DB3452, #C12ACF);}
   .st11 .co_2{background: #DC3352 ;}
+  .st11 .co_2::after{content: "#DC3352" ;}
   .st11 .co_3{background: linear-gradient(0.25turn, #DC46DB, #9369E7, #5D92F2);}
   
   .nodam .co_1{background: #5ca5ff ;}
+  .nodam .co_1::after{content: "#5ca5ff" ;}
   .nodam .co_2{background: #ffffff ;}
+  .nodam .co_2::after{content: "#ffffff" ;}
   .nodam .co_3{background: #000000 ;}
+  .nodam .co_3::after{content: "#000000" ;}
   
   .ars .co_1{background: #d80313  ;}
+  .ars .co_1::after{content: "#d80313"  ;}
   .ars .co_2{background: #9c824a ;}
+  .ars .co_2::after{content: "#9c824a" ;}
   .ars .co_3{background: #023474 ;}
+  .ars .co_3::after{content: "#023474" ;}
   
   .newy .co_1{background: #000000 ;}
+  .newy .co_1::after{content: "#000000" ;}
   .newy .co_2{background: #ffffff ;}
+  .newy .co_2::after{content: "#ffffff" ;}
   
   .bf .co_1{background: #00d143  ;}
+  .bf .co_1::after{content: "#00d143";}
   .bf .co_2{background: #000000 ;}
+  .bf .co_2::after{content: "#000000";}
   .bf .co_3{background: #ffffff ;}
+  .bf .co_3::after{content: "#ffffff";}
   
   .newy2 .co_1{background: linear-gradient(0.25turn, #f3e0cc,#de6e6d);}
+  .newy2 .co_2::after{content: "#1d3146" ;}
   .newy2 .co_2{background: #1d3146 ;}
+  .newy2 .co_3::after{content: "#E7714E" ;}
   .newy2 .co_3{background: #E7714E ;}
   
   .pep .co_1{background: #CDDB08 ;}
+  .pep .co_1::after{content: "#CDDB08" ;}
   .pep .co_2{background: #EE3F42 ;}
+  .pep .co_2::after{content: "#EE3F42" ;}
   .pep .co_3{background: #056BAA ;}
+  .pep .co_3::after{content: "#056BAA" ;}
   /* 팝업 개인 색 끝 */
   .card:hover .card_info {
     transform: translate3d(0%, -30px, 300px);
@@ -1176,19 +1223,30 @@ table td i{
   }
   /* 배너 개인색 */
   .banner .cm .co_1{ background: #A80D35;}
+  .banner .cm .co_1::after{ content: "#A80D35";}
   .banner .cm .co_2{ background: #FFF1DC;}
+  .banner .cm .co_2::after{ content: "#FFF1DC";}
   .banner .cm .co_3{ background: #F8E2D5;}
+  .banner .cm .co_3::after{ content: "#F8E2D5";}
   
   .banner .bf .co_1{ background: #FED402;}
+  .banner .bf .co_1::after{ content: "#FED402";}
   .banner .bf .co_2{ background: #D9B500;}
+  .banner .bf .co_2::after{ content: "#D9B500";}
   .banner .bf .co_3{ background: black;}
+  .banner .bf .co_3::after{ content: "#000000";}
   
   .banner .da .co_1{ background: #00ACCD;}
+  .banner .da .co_1:after{ content: "#00ACCD";}
   .banner .da .co_2{ background: white;}
+  .banner .da .co_2:after{ content: "fffffff";}
   
   .banner .gama .co_1{ background: #00ACCD;}
+  .banner .gama .co_1::after{ content: "#00ACCD";}
   .banner .gama .co_2{ background: #F3F3F3;}
+  .banner .gama .co_2::after{ content: "#F3F3F3";}
   .banner .gama .co_3{ background: black;}
+  .banner .gama .co_3::after{ content: "#000000";}
  
   .controler3{
     display: none;
