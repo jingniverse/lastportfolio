@@ -389,22 +389,16 @@ section>article{
     border: 1px solid #20b085;
     border-radius: 10px;
     box-sizing: border-box;
-    left: calc(50% - 40px);
     font-size: 15px;
     letter-spacing: 1px;
     height: 30px;
     z-index: 2;
-}
-.test{
+    opacity: 0;
     display: flex;
-    opacity: 1;
-}
-.s_list>li:hover span{
-    opacity: 1;
 }
 
 .s_list>li:hover span{
-    display: flex;
+    opacity: 1;
 }
 .s_list>li::after{
     content: "";
@@ -412,14 +406,41 @@ section>article{
     width: 60px;
     height: 60px;
 }
-.s_list .ps span.test {
-    animation: updown 1.3s ease infinite 1s alternate;}
+.s_list .ps span{
+    left: calc(50% - 42px);
+    animation: updown 1.3s ease infinite 1s alternate;
+}
+.s_list .il span{
+    left: calc(50% - 44px);
+    animation: updown 1.3s ease infinite 1.2s alternate;
+}
+.s_list .jq span{
+    left: calc(50% - 29px);
+    animation: updown 1.3s ease infinite 1.4s alternate;
+}
+.s_list .js span{
+    left: calc(50% - 42px);
+    animation: updown 1.3s ease infinite 1.6s alternate;
+}
+.s_list .ht span{
+    left: calc(50% - 33px);
+    animation: updown 1.3s ease infinite 1.8s alternate;
+}
+.s_list .cs span{
+    left: calc(50% - 27px);
+    animation: updown 1.3s ease infinite 2s alternate;
+}
+.s_list .vs span{
+    left: calc(50% - 37px);
+    animation: updown 1.3s ease infinite 2.2s alternate;
+}
+
 .s_list .ps::after{
     background: url(../img/ps.png) no-repeat;
     background-size: 60px;
     animation: updown 1.3s ease infinite 1s alternate;
 }
-.s_list .li::after{
+.s_list .il::after{
     background: url(../img/illustrator.png) no-repeat;
     background-size: 60px;
     animation: updown 1.3s ease infinite 1.2s alternate;
