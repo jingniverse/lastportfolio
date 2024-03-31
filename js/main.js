@@ -22,9 +22,9 @@ $(document).ready(function(){
         $('.plan_popup').addClass('on')
         e.preventDefault()
 
-     })
-     $('.close').click(function(){
-      $('.plan_popup').removeClass('on')
+    })
+    $('.close').click(function(){
+    $('.plan_popup').removeClass('on')
     })
 
 
@@ -92,8 +92,8 @@ $(".popup_wrap .next").click(function(){
 
     if(pcount==1){
         $(".popup_wrap .next").hide()
-     }else {
-     $(".popup_wrap .next").show()
+    }else {
+    $(".popup_wrap .next").show()
     }
     if (pcount === 0) {
         $(".popup_wrap .prev").hide();
