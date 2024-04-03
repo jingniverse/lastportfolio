@@ -181,13 +181,13 @@
     justify-content: space-between;
     }
     .s_list>li{
-        width: 40px;
+        width: 70px;
     }
     .s_list>li+li{
-        margin-left: 0px;
+        margin-left: 30px;
     }
     .s_list>li:nth-of-type(3n+1){
-        margin-left: 0px;
+        margin-left: 30px;
     }
     .s_list>li::after{
         width: 40px;
@@ -214,7 +214,30 @@
     .s_list>li:nth-of-type(3n){
         margin-bottom:0 ;
     }
-
+    .s_list>li span{
+        bottom: -7px;
+    }
+    .s_list .ps span{
+        left: calc(50% - 53px);
+    }
+    .s_list .il span{
+        left: calc(50% - 57px);
+    }
+    .s_list .jq span{
+        left: calc(50% - 45px);
+    }
+    .s_list .js span{
+        left: calc(50% - 56px);
+    }
+    .s_list .ht span{
+        left: calc(50% - 48px);
+    }
+    .s_list .cs span{
+        left: calc(50% - 42px);
+    }
+    .s_list .vs span{
+        left: calc(50% - 52px);
+    }
     .page3 article{
         width: 460px;
         padding-top: 100px;

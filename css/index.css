@@ -133,7 +133,7 @@ body::after{
 }
 
 section>article{
-    width: 1440px;
+    width: 1400px;
     margin:0 auto;
     padding: 200px 0 100px;
     z-index: 2;
@@ -197,9 +197,6 @@ section>article{
     border: 3px solid #20b085;
     box-sizing: border-box;
 }
-.page1{
-
-}
 .page1 article{
     margin: 0 ;
     width: 100%;
@@ -213,7 +210,7 @@ section>article{
 }
 .page1 p{
     
-    width: 1300px;
+    width: 1070px;
     text-transform: uppercase;
     font-size: 100px;
     line-height: 150px;
@@ -267,7 +264,7 @@ section>article{
     font-family: Pretendard;
 }
 .page2_wrap div+div{
-    margin-left: 65px;
+    margin-left: 40px;
 }
 .page2 .pic{
     flex: none;
@@ -477,6 +474,7 @@ section>article{
 .page3 article{
     position: relative;
     padding-top: 150px;
+    width: 1400px;
 }
 .page5 h2,
 .page4 h2,
@@ -498,9 +496,6 @@ section>article{
     display: inline-block;
     border-radius: 50%;
     margin-left: 5px;
-}
-.page3 article{
-    width: 1440px;
 }
 
 .viewstyle{
@@ -590,7 +585,7 @@ section>article{
     font-size:30px
 }
 .pb_list_wrap{
-    width: 1440px;
+    width: 1400px;
     overflow: hidden;
 }
 
@@ -922,7 +917,7 @@ section>article{
     margin-left:10px;
 }
 .list_view table{
-    width: 1440px;
+    width: 1400px;
     margin-top: 100px;
 }
 table th{
