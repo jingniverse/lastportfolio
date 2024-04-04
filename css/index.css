@@ -1238,44 +1238,41 @@ table td i{
     margin: 0;
   }
   /* 배너 개인색 */
-  .banner .cm .co_1{ background: #A80D35;}
-  .banner .cm .co_1::after{ content: "#A80D35";}
-  .banner .cm .co_2{ background: #FFF1DC;}
-  .banner .cm .co_2::after{ content: "#FFF1DC";}
-  .banner .cm .co_3{ background: #F8E2D5;}
-  .banner .cm .co_3::after{ content: "#F8E2D5";}
-  
-  .banner .bf .co_1{ background: #FED402;}
-  .banner .bf .co_1::after{ content: "#FED402";}
-  .banner .bf .co_2{ background: #D9B500;}
-  .banner .bf .co_2::after{ content: "#D9B500";}
-  .banner .bf .co_3{ background: black;}
-  .banner .bf .co_3::after{ content: "#000000";}
-  
-  .banner .da .co_1{ background: #00ACCD;}
-  .banner .da .co_1:after{ content: "#00ACCD";}
-  .banner .da .co_2{ background: white;}
-  .banner .da .co_2:after{ content: "fffffff";}
-  
-  .banner .gama .co_1{ background: #00ACCD;}
-  .banner .gama .co_1::after{ content: "#00ACCD";}
-  .banner .gama .co_2{ background: #F3F3F3;}
-  .banner .gama .co_2::after{ content: "#F3F3F3";}
-  .banner .gama .co_3{ background: black;}
-  .banner .gama .co_3::after{ content: "#000000";}
- 
-  .controler3{
+.banner .cm .co_1{ background: #A80D35;}
+.banner .cm .co_1::after{ content: "#A80D35";}
+.banner .cm .co_2{ background: #FFF1DC;}
+.banner .cm .co_2::after{ content: "#FFF1DC";}
+.banner .cm .co_3{ background: #F8E2D5;}
+.banner .cm .co_3::after{ content: "#F8E2D5";}
+
+.banner .bf .co_1{ background: #FED402;}
+.banner .bf .co_1::after{ content: "#FED402";}
+.banner .bf .co_2{ background: #D9B500;}
+.banner .bf .co_2::after{ content: "#D9B500";}
+.banner .bf .co_3{ background: black;}
+.banner .bf .co_3::after{ content: "#000000";}
+
+.banner .da .co_1{ background: #00ACCD;}
+.banner .da .co_1:after{ content: "#00ACCD";}
+.banner .da .co_2{ background: white;}
+.banner .da .co_2:after{ content: "fffffff";}
+
+.banner .gama .co_1{ background: #00ACCD;}
+.banner .gama .co_1::after{ content: "#00ACCD";}
+.banner .gama .co_2{ background: #F3F3F3;}
+.banner .gama .co_2::after{ content: "#F3F3F3";}
+.banner .gama .co_3{ background: black;}
+.banner .gama .co_3::after{ content: "#000000";}
+.controler3{
     display: none;
-  }
-
-
+}
 .page5 .text_box{
     display: flex;
     flex-flow: column;
     align-items: center;
 }
 .text_box p{
-    margin: 100px 0 200px;
+    margin: 50px 0 50px;
     font-size: 80px;
     letter-spacing: 5px;
     transition: .6s all ease 0s;
@@ -1318,7 +1315,8 @@ table td i{
     letter-spacing: 10px;
 }
 .plan_popup{
-    z-index: 2;
+    padding: 100px 0;
+    z-index: 10;
     top: 0;
     left: 0;
     position: fixed;
@@ -1335,7 +1333,8 @@ table td i{
 .dongainfo_popup{
     position: relative;
     width: 70%;
-    height: 70%;
+    max-width: 1350px;
+    height:700px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
